@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="rich_black">#FF010203</color>
+    <color name="vampire_black">#0E0E0E</color>
+    <color name="chinese_black">#FF141414</color>
+    <color name="eerie_black">#FF1b1b1b</color>
+    <color name="rich_black_2">#FF010b13</color>
+    <color name="complement">#FF07d9ff</color>
+    <color name="imdb_gold">#FFF5C518</color>
+    <color name="imdb_blue">#FF009AE1</color>
+    <color name="imdb_gray">#5E5E5E</color>
+    <color name="imdb_dark_gray">#FF353534</color>
+    <color name="imdb_main_text">#FFFBEAAB</color>
+</resources>

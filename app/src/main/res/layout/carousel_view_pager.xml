@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="370dp"
+    android:layout_marginBottom="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/rich_black">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/carouselViewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="60dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/textContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/carouselTextView"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@drawable/facebook_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/movieTitleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/imdb_main_text"
+        android:maxLines="1"
+        android:text="Text"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/movieContentsTextView"
+        app:layout_constraintStart_toEndOf="@+id/textContainer" />
+
+    <TextView
+        android:id="@+id/movieContentsTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:textColor="@color/imdb_gray"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="12sp"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textContainer"
+        app:layout_constraintStart_toEndOf="@+id/textContainer"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

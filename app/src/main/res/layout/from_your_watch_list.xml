@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:paddingVertical="10dp"
+    android:layout_marginBottom="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/chinese_black">
+
+    <TextView
+        android:id="@+id/headLineTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:drawableStart="@drawable/vertical_devider"
+        android:text="From your Watchlist"
+        android:textColor="@color/imdb_main_text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bookMarkImageView"
+        android:layout_width="84dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headLineTextView"
+        app:srcCompat="@drawable/baseline_bookmark" />
+
+    <ImageView
+        android:id="@+id/addImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headLineTextView"
+        app:srcCompat="@drawable/baseline_add" />
+
+    <TextView
+        android:id="@+id/emptyWatchTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:text="Your watchlist is Empty"
+        android:textColor="@color/imdb_main_text"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookMarkImageView" />
+
+
+    <TextView
+        android:id="@+id/saveShowListTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textAlignment="center"
+        android:text="Save shows and movies to keep track of what you want to watch"
+        android:textSize="16sp"
+        android:textColor="@color/imdb_gray"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emptyWatchTextView" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipPopularMovies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Browse popular movies"
+        android:textColor="@color/imdb_blue"
+        android:backgroundTint="@color/chinese_black"
+        app:chipStrokeColor="#3E3E3E"
+        app:chipStrokeWidth="2dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveShowListTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

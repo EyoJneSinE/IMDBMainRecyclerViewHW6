@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:paddingVertical="10dp"
+    android:paddingBottom="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@color/chinese_black">
+
+    <TextView
+        android:id="@+id/followIMDBHeadLineTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:drawableStart="@drawable/vertical_devider"
+        android:text="Follow IMDb"
+        android:textColor="@color/imdb_main_text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/tiktok"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/tiktok_icon"
+        android:background="@color/cardview_shadow_end_color"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/instagram"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/instagram_icon"
+        android:background="@color/cardview_shadow_end_color"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toEndOf="@+id/tiktok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/twitter"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/twitter_icon"
+        android:background="@color/cardview_shadow_end_color"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toEndOf="@+id/instagram"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/youtube"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/youtube_icon"
+        android:background="@color/cardview_shadow_end_color"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toEndOf="@+id/twitter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/facebook"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/facebook_icon"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toEndOf="@+id/youtube"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

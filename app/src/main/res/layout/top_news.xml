@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:paddingVertical="10dp"
+    android:layout_marginBottom="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/chinese_black">
+
+    <TextView
+        android:id="@+id/topNewsHeadLineTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:drawableStart="@drawable/vertical_devider"
+        android:text="Top News"
+        android:textColor="@color/imdb_main_text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/topNewsSeeAllTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEE ALL"
+        android:textStyle="bold"
+        android:textFontWeight="@integer/material_motion_duration_medium_1"
+        android:textSize="18sp"
+        android:textColor="@color/imdb_blue"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/topNewsImageView"
+        android:layout_width="90dp"
+        android:layout_height="140dp"
+        android:layout_marginVertical="12dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topNewsHeadLineTextView" />
+
+    <TextView
+        android:id="@+id/topNewsTitleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="6dp"
+        android:maxLines="2"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:text="TextView"
+        android:textColor="@color/imdb_main_text"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/topNewsContentsTextView"
+        app:layout_constraintStart_toEndOf="@+id/topNewsImageView" />
+
+    <TextView
+        android:id="@+id/topNewsContentsTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/imdb_gray"
+        android:textSize="12sp"
+        android:maxLines="3"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/topNewsImageView"
+        app:layout_constraintStart_toEndOf="@+id/topNewsImageView"
+        app:layout_constraintTop_toTopOf="@+id/topNewsImageView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

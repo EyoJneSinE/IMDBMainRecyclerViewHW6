@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="490dp"
+    android:paddingVertical="10dp"
+    android:layout_marginBottom="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/chinese_black">
+
+    <TextView
+        android:id="@+id/topPicksForYouHeadLineTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top picks for you"
+        android:textColor="@color/imdb_main_text"
+        android:drawableStart="@drawable/vertical_devider"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/topPicksForYouSeeAllTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEE ALL"
+        android:textStyle="bold"
+        android:textFontWeight="@integer/material_motion_duration_medium_1"
+        android:textSize="18sp"
+        android:textColor="@color/imdb_blue"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/topPicksForYouHeadLineThisWeeksTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tv shows and movies just for you"
+        android:textColor="@color/imdb_gray"
+        android:textSize="18sp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topPicksForYouHeadLineTextView"/>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipTopPicksForYouPopularMovies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="@color/imdb_gold"
+        android:text="Improve suggestions"
+        android:textColor="@color/rich_black_2"
+        app:chipStrokeColor="@color/imdb_gold"
+        app:chipStrokeWidth="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topPicksForYouHeadLineThisWeeksTextView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fanfavouritesRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipTopPicksForYouPopularMovies" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
